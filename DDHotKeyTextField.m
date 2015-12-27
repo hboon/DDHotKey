@@ -129,6 +129,7 @@ static DDHotKeyTextFieldEditor *DDFieldEditor(void) {
         if (_globalMonitor) {
             [NSEvent removeMonitor:_globalMonitor];
             _globalMonitor = nil;
+			[[NSNotificationCenter defaultCenter] postNotificationName:DDHotKeyTextFieldResignFirstResponderNotification object:self];
         }
     }
     

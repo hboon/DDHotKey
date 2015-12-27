@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "DDHotKeyCenter.h"
 
+#define DDHotKeyTextFieldResignFirstResponderNotification @"DDHotKeyTextFieldResignFirstResponderNotification"
 @interface DDHotKeyTextField : NSTextField
 
 @property (nonatomic, strong) DDHotKey *hotKey;
